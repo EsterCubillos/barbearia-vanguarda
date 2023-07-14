@@ -8,11 +8,22 @@ export class Titulo extends LitElement {
         color: var(--cor-secundaria, #665e57);
         text-shadow: 2px 2px  0px rgba(0, 0, 0, 0.25);
         font-family: var(--fonte-titulo);
-        font-size: 48px;
+        font-size:3rem;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
+        line-height: 100%
       }
+      ::slotted(*) {
+        font-size:inherit;
+        margin: 0;
+      }
+
+
+
+
+
+
+
     `,
   ];
 
