@@ -36,12 +36,12 @@ export class HeroSection extends LitElement {
       }
 
       app-logo {
-        width: 128px;
-        height: 128px;
+        width: 160px;
+        height: 160px;
 
         position: absolute;
-        right: -67px;
-        top: -23px;
+        right: -72px;
+        top: -39px;
       }
     `,
   ];
