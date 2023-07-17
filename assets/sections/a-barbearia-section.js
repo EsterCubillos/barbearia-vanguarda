@@ -73,7 +73,7 @@ export class ABarbeariaSection extends LitElement {
     return html`
       <app-titulo>A Barbearia</app-titulo>
       <app-bolinhas></app-bolinhas>
-      <app-quadro img src="C:\Users\ester.ncmatos\Documents\Repositórios\barbearia vanguarda\barbearia-vanguarda\public\imagembarber.jpg" alt="imagem"
+      <app-quadro img src="imagembarber.jpg" alt="imagem"
         ></app-quadro>
           <article>
             <app-paragrafo
