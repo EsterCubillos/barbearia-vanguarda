@@ -15,6 +15,17 @@ export class ABarbeariaSection extends LitElement {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+
+        border: 3px solid;
+        border-image-source: linear-gradient(
+          42deg,
+          rgba(102, 78, 56, 0) 50%,
+          rgba(102, 78, 56, 1) 100%
+        );
+        border-image-slice: 1;
+
+        border-left: 0;
+        border-bottom: 0;
       }
 
       app-paragrafo {
@@ -28,24 +39,55 @@ export class ABarbeariaSection extends LitElement {
         font-weight: 400;
         line-height: normal;
       }
+
+      app-quadro {
+        width: 335px;
+        height: 335px;
+
+        position: absolute;
+        right: -82px;
+        top: 106px;
+        border-radius: 100%;
+        z-index:-10;
+      }
+
+      app-bolinhas {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+
+        position: absolute;
+        left: -150px;
+        top: 72px;
+        z-index:-20;
+      }
+
+      img 
+      
     `,
   ];
 
   render() {
     return html`
       <app-titulo>A Barbearia</app-titulo>
+      <app-bolinhas></app-bolinhas>
+      <app-quadro img src="C:\Users\ester.ncmatos\Documents\Repositórios\barbearia vanguarda\barbearia-vanguarda\public\imagembarber.jpg" alt="imagem"
+        ></app-quadro>
+          <article>
+            <app-paragrafo
+              >Bem-vindo à Barbearia Vanguarda, onde tradição e inovação se
+              encontram para proporcionar cortes de cabelo e barbas impecáveis.
+              Com uma equipe de barbeiros especializados, combinamos técnicas
+              tradicionais com as últimas tendências, garantindo um atendimento
+              personalizado em um ambiente acolhedor.</app-paragrafo
+            >
 
-      <article>
-        <app-paragrafo
-          >Bem-vindo à Barbearia Vanguarda, onde tradição e inovação se
-          encontram para proporcionar cortes de cabelo e barbas impecáveis. Com
-          uma equipe de barbeiros especializados, combinamos técnicas
-          tradicionais com as últimas tendências, garantindo um atendimento
-          personalizado em um ambiente acolhedor.</app-paragrafo
-        >
-
-        <app-botao>Leia mais</app-botao>
-      </article>
+            <app-botao>Leia mais</app-botao>
+          </article>
+        </app-quadro></app-quadro
+      >
     `;
   }
 }

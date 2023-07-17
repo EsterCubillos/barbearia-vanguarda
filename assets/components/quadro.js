@@ -15,7 +15,7 @@ export class Quadro extends LitElement {
         box-shadow: 0px 24px 34px 0px rgba(0, 0, 0, 0.25);
 
         overflow:hidden;
-
+        
 
 
 
