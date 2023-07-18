@@ -37,6 +37,7 @@ export class Botao extends LitElement {
         font-style:normal;
         font-weight: 700;
         line-height: normal;
+        white-space:nowrap;
 
         transition: all 200s;
         cursor: pointer;
@@ -48,7 +49,7 @@ export class Botao extends LitElement {
   ];
 
   render() {
-    return html`<button><slot> Pressione </slot></button>`;
+    return html`<button><slot>pressione</slot></button>`;
   }
 }
 customElements.define("app-botao", Botao);

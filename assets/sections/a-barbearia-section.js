@@ -14,7 +14,7 @@ export class ABarbeariaSection extends LitElement {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: 10px;
 
         border: 3px solid;
         border-image-source: linear-gradient(
@@ -26,9 +26,11 @@ export class ABarbeariaSection extends LitElement {
 
         border-left: 0;
         border-bottom: 0;
+        background-color:var(--tom-1)
       }
 
       app-paragrafo {
+       
         width: 270px;
 
         text-align: justify;
@@ -36,19 +38,20 @@ export class ABarbeariaSection extends LitElement {
         font-family: var (--fonte-corpo);
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        letter-spacing:-1.424px;
+        line-height: 140%
+        
       }
 
       app-quadro {
-        width: 335px;
-        height: 335px;
+        width: 358px;
+        height: 358px;
 
         position: absolute;
         right: -82px;
         top: 106px;
         border-radius: 100%;
-        z-index:-10;
+        z-index: -10;
       }
 
       app-bolinhas {
@@ -61,11 +64,15 @@ export class ABarbeariaSection extends LitElement {
         position: absolute;
         left: -150px;
         top: 72px;
-        z-index:-20;
+        z-index: -20;
+
+        --cor-bolinhas:var(--tom-3);
       }
 
-      img 
-      
+      img {
+        width: 358px;
+        height: 358px;
+      }
     `,
   ];
 
@@ -73,8 +80,7 @@ export class ABarbeariaSection extends LitElement {
     return html`
       <app-titulo>A Barbearia</app-titulo>
       <app-bolinhas></app-bolinhas>
-      <app-quadro img src="imagembarber.jpg" alt="imagem"
-        ></app-quadro>
+      <app-quadro><img src="imagembarber.jpg" alt="Descrição da Imagem"></app-quadro>
           <article>
             <app-paragrafo
               >Bem-vindo à Barbearia Vanguarda, onde tradição e inovação se
