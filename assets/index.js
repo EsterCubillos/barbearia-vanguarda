@@ -11,6 +11,7 @@ export * from './components/bolinhas'
 export * from './sections/hero-section'
 export * from './sections/a-barbearia-section'
 export * from './sections/servicos-sectio'
+export * from './sections/contato-section'
 
 
 //Páginas

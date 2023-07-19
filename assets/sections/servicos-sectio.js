@@ -5,7 +5,9 @@ export class ServicosSectio extends LitElement {
   static styles = [
     section,
     css`
-      
+      :host {
+        padding: 2rem 0;
+      }
 
       app-bolinhas {
         --cor-bolinhas: var(--tom-3);
@@ -54,43 +56,44 @@ export class ServicosSectio extends LitElement {
         gap: 16px;
       }
 
-      article app-paragrafo:first-child{ /* o first child adiciona apenas o primeiro paragrafo*/
+      article app-paragrafo:first-child {
+        /* o first child adiciona apenas o primeiro paragrafo*/
         font-weight: 700;
-        color: var(--tom-3, #664E38);
+        color: var(--tom-3, #664e38);
       }
 
-      .descricao{
-        width:108px;
-        font-size: .875rem;
+      .descricao {
+        width: 108px;
+        font-size: 0.875rem;
       }
-      img{
-        height:100%;
+      img {
+        height: 100%;
       }
 
-      app-quadro{
+      app-quadro {
+        width: 165px;
+        height: 320px;
+
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
       }
-
-
     `,
   ];
 
   render() {
     return html`
-      <app-paragrafo class= "titulo">
+      <app-paragrafo class="titulo">
         Estilo,cuidado e execelência em cada <span>corte</span>.
       </app-paragrafo>
 
       <section>
         <app-quadro>
-            <img src= "servicos-1.jpg" alt="imagem" />
-    
-    </app-quadro>
+          <img src="servicos-1.jpg" alt="imagem" />
+        </app-quadro>
         <aside>
           <article>
             <app-paragrafo>Corte</app-paragrafo>
-            <app-paragrafo class = "descricao"
+            <app-paragrafo class="descricao"
               >Social, degradê, surfista, militar, razor part,
               undercut</app-paragrafo
             >
