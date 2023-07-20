@@ -7,7 +7,7 @@ export class Botao extends LitElement {
         display: block;
       }
 
-      ::slotted(button) {
+      ::slotted(button),button,::slotted(a) {
         display: inline-flex;
         width: 132px;
         height: 31px;
@@ -40,6 +40,7 @@ export class Botao extends LitElement {
         font-weight: 700;
         line-height: normal;
         white-space: nowrap;
+        text-decoration:none;
 
         transition: all 200s;
         cursor: pointer;
@@ -53,11 +54,7 @@ export class Botao extends LitElement {
         color: var(--tom-1);
       }
 
-      ::slotted(*) {
-        width: 24px;
-        height: 24px;
-        margin-right: 5px 8px 5px 0;
-      }
+      
     `,
   ];
 
