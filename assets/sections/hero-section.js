@@ -61,7 +61,7 @@ export class HeroSection extends LitElement {
       <app-paragrafo>
         Obtenha um estilo impecável, do cabelo à barba
       </app-paragrafo>
-      <app-botao></app-botao>
+      
     `;
   }
 }

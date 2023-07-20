@@ -21,6 +21,7 @@ export class ContatoSection extends LitElement {
       app-botao,
       div {
         width: 100%;
+        
       }
 
       div {
