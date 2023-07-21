@@ -17,6 +17,7 @@ export * from './sections/a-barbearia-section'
 export * from './sections/servicos-sectio'
 export * from './sections/contato-section'
 export * from './sections/unidades-section'
+export * from './sections/menu-section'
 
 
 //Páginas
