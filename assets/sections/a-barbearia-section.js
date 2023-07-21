@@ -90,7 +90,7 @@ export class ABarbeariaSection extends LitElement {
               personalizado em um ambiente acolhedor.</app-paragrafo
             >
 
-            <app-botao>Leia mais</app-botao>
+            <app-botao><a href="a-barbearia">Leia mais</a></app-botao >
           </article>
         </app-quadro></app-quadro
       >

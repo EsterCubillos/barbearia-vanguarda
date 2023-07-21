@@ -7,11 +7,13 @@ export class Botao extends LitElement {
         display: block;
       }
 
-      ::slotted(button),button,::slotted(a) {
-        display: inline-flex;
-        width: 132px;
-        height: 31px;
-        padding: 10px 24px;
+      ::slotted(button),
+      button,
+      ::slotted(a) {
+        display: flex;
+        width: inherit;
+
+        padding: 5px 24px;
         border: 0;
         justify-content: flex-start;
         align-items: center;
@@ -40,7 +42,7 @@ export class Botao extends LitElement {
         font-weight: 700;
         line-height: normal;
         white-space: nowrap;
-        text-decoration:none;
+        text-decoration: none;
 
         transition: all 200s;
         cursor: pointer;
@@ -53,17 +55,11 @@ export class Botao extends LitElement {
         );
         color: var(--tom-1);
       }
-
-      
     `,
   ];
 
   render() {
-    return html`<slot><button>Pressione</button></slot>
-    
-    
-  
-    `;
+    return html`<slot><button>Pressione</button></slot> `;
   }
 }
 customElements.define("app-botao", Botao);
