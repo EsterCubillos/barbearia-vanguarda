@@ -17,7 +17,16 @@ export class MenuSection extends LitElement {
         justify-content: space-between;
         align-items: flex-start;
         flex-shrink: 0;
+
         box-sizing:border-box;
+        background-color: rgba(0,0,0, 40% );
+      }
+
+      app-logo{
+        width:96px;
+        height:96px;
+        background-color:white;
+        
       }
     `,
   ];
