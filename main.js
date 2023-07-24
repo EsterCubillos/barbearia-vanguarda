@@ -1,8 +1,13 @@
 import "./assets";
+import { initRouter } from "./router";
 
 let navbar;
 let dialog;
+let router;
 document.addEventListener('DOMContentLoaded', function() {
+ router = initRouter();
+
+
     navbar= document.querySelector("app-navbar")
 
     dialog= document.querySelector('menu-section')
