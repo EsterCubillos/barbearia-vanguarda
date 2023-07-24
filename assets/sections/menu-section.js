@@ -1,4 +1,5 @@
 import { LitElement, html, css } from "lit";
+import { nav } from "../../main";
 
 export class MenuSection extends LitElement {
   static styles = [
@@ -12,8 +13,14 @@ export class MenuSection extends LitElement {
         display: flex;
         width: 100%;
         height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+
+
+
         padding: 32px;
         border:0;
+        margin:0;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
@@ -63,6 +70,12 @@ export class MenuSection extends LitElement {
         text-decoration:none;
       }
 
+      button{
+        padding:0;
+        border:0;
+        background:transparent;
+      }
+
       svg,feather-icon{
         display:flex;
         width:24px;
@@ -90,7 +103,10 @@ export class MenuSection extends LitElement {
 
         
           <a href="/">Home <feather-icon icon="home"></feather-icon></a>
-          <feather-icon icon= "x" ></feather>
+
+          <button @click=${nav.fechar}>
+            <feather-icon icon= "x" ></feather>
+          </button>
         </nav>
       </dialog>
     `;

@@ -20,6 +20,3 @@ export * from './sections/unidades-section'
 export * from './sections/menu-section'
 
 
-//Páginas
-
-export* from './pages/home-page'

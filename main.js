@@ -8,8 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
     dialog= document.querySelector('menu-section')
     .shadowRoot.querySelector('dialog');
 
-    console.log(dialog)
-})
+});
+
+export const nav = {
+  abrir: function () {
+    dialog.showModal()
+  },
+  fechar: function () {
+    dialog.close()
+  },
+}
+
+
 
 
 
